@@ -55,7 +55,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">Demo Project</a>
+                <a class="navbar-brand" href="index.html">D V Plastics</a>
             </div>
             <!-- /.navbar-header -->
             <ul class="nav navbar-top-links navbar-right">
@@ -105,47 +105,29 @@
                                 <li>
                                     <a href="<?php echo base_url('admin/addproduct'); ?>">Add a Product</a>
                                 </li>
-                            </ul>
-                            <!-- /.nav-second-level -->
-                        </li>
-                        <li>
-                            <a href="tables.html"><i class="fa fa-table fa-fw"></i> Tables</a>
-                        </li>
-                        <li>
-                            <a href="forms.html"><i class="fa fa-edit fa-fw"></i> Forms</a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-wrench fa-fw"></i> UI Elements<span class="fa arrow"></span></a>
-                            <ul class="nav nav-second-level">
-                                <li>
-                                    <a href="panels-wells.html">Panels and Wells</a>
-                                </li>
-                                <li>
-                                    <a href="buttons.html">Buttons</a>
-                                </li>
-                                <li>
-                                    <a href="notifications.html">Notifications</a>
-                                </li>
-                                <li>
-                                    <a href="typography.html">Typography</a>
-                                </li>
-                                <li>
-                                    <a href="icons.html"> Icons</a>
-                                </li>
-                                <li>
-                                    <a href="grid.html">Grid</a>
+								<li>
+                                    <a href="#">Product Types <span class="fa arrow"></span></a>
+                                    <ul class="nav nav-third-level">
+                                        <li>
+                                            <a href="<?php echo base_url('admin/product_type'); ?>">View Product Types</a>
+                                        </li>
+                                        <li>
+                                            <a href="<?php echo base_url('admin/add_product_type'); ?>">Add Product Type</a>
+                                        </li>
+                                    </ul>
+                                    <!-- /.nav-third-level -->
                                 </li>
                             </ul>
                             <!-- /.nav-second-level -->
                         </li>
-                        <li>
-                            <a href="#"><i class="fa fa-sitemap fa-fw"></i> Multi-Level Dropdown<span class="fa arrow"></span></a>
+						<li>
+                            <a href="#"><i class="fa fa-sitemap fa-fw"></i> SEO<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="#">Second Level Item</a>
+                                    <a href="#">Index</a>
                                 </li>
                                 <li>
-                                    <a href="#">Second Level Item</a>
+                                    <a href="#">About</a>
                                 </li>
                                 <li>
                                     <a href="#">Third Level <span class="fa arrow"></span></a>
@@ -169,6 +151,56 @@
                             <!-- /.nav-second-level -->
                         </li>
                         <li>
+                            <a href="<?php echo base_url('admin/tables'); ?>"><i class="fa fa-table fa-fw"></i> Tables</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-sitemap fa-fw"></i> Users<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="#">Settings</a>
+                                </li>
+                                <li>
+                                    <a href="#">Others <span class="fa arrow"></span></a>
+                                    <ul class="nav nav-third-level">
+                                        <li>
+                                            <a href="#">Add User</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Change Password</a>
+                                        </li>
+                                       
+                                    </ul>
+                                    <!-- /.nav-third-level -->
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        <!--<li>
+                            <a href="#"><i class="fa fa-wrench fa-fw"></i> UI Elements<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="panels-wells.html">Panels and Wells</a>
+                                </li>
+                                <li>
+                                    <a href="buttons.html">Buttons</a>
+                                </li>
+                                <li>
+                                    <a href="notifications.html">Notifications</a>
+                                </li>
+                                <li>
+                                    <a href="typography.html">Typography</a>
+                                </li>
+                                <li>
+                                    <a href="icons.html"> Icons</a>
+                                </li>
+                                <li>
+                                    <a href="grid.html">Grid</a>
+                                </li>
+                            </ul>
+                           
+                        </li>
+                        
+                        <li>
                             <a href="#"><i class="fa fa-files-o fa-fw"></i> Sample Pages<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
@@ -178,8 +210,8 @@
                                     <a href="login.html">Login Page</a>
                                 </li>
                             </ul>
-                            <!-- /.nav-second-level -->
-                        </li>
+                            
+                        </li>-->
                     </ul>
                 </div>
                 <!-- /.sidebar-collapse -->

@@ -5,7 +5,7 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h1 class="page-header">Adding Products</h1>
+                        <h1 class="page-header">Add Product Type</h1>
                     </div>
                     <!-- /.col-lg-12 -->
 					<div class="col-lg-12">
@@ -16,7 +16,7 @@
 							<?php } ?>
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            Add a Product
+                            Add a Product Type
                         </div>
 						
                         <div class="panel-body">
@@ -26,37 +26,23 @@
 							<form role="form" method="post" enctype="multipart/form-data">
                                         <div class="form-group">
                                             <label>Name</label>
-                                            <input class="form-control" name="productname" value="<?php echo set_value('productname'); ?>">
-											<?php echo form_error('productname','<p class="help-block" style="color:red;">','</p>'); ?>
+                                            <input class="form-control" name="productypename" value="<?php echo set_value('productypename'); ?>">
+											<?php echo form_error('productypename','<p class="help-block" style="color:red;">','</p>'); ?>
                                             <p class="help-block">Example block-level help text here.</p>
                                         </div>
-										<div class="form-group">
-                                            <label>Price</label>
-                                            <input type="number" step="any" class="form-control" name="productprice" value="<?php echo set_value('productprice'); ?>">
-											<?php echo form_error('productprice','<p class="help-block" style="color:red;">','</p>'); ?>
-                                        </div>
-										<div class="form-group">
-													<label for="ptype">Product Type</label>
-													<select name="ptype" class="form-control" required>
-										 <option>---Select Type---</option>
-										 <?php foreach($user as $post): ?>
-										<option value="<?php echo $post['name'];?>"> <?php echo $post['name'];?></option>
-										<?php endforeach;?>
-										</select>
-										<?php echo form_error('ptype','<p class="help-block" style="color:red;">','</p>'); ?>
-													</div>
+										
                                         <div class="form-group">
                                             <label>Image</label>
-                                            <input type="file" name="productimage">
-											<?php echo form_error('productimage','<p class="help-block" style="color:red;">','</p>'); ?>
+                                            <input type="file" name="productypeimage">
+											<?php echo form_error('productypeimage','<p class="help-block" style="color:red;">','</p>'); ?>
                                         </div>
                                         <div class="form-group">
                                             <label>Description</label>
-                                            <textarea class="form-control" rows="3" name="productdesc"><?php echo set_value('productdesc'); ?></textarea>
-											<?php echo form_error('productdesc','<p class="help-block" style="color:red;">','</p>'); ?>
+                                            <textarea class="form-control" rows="3" name="productypedesc"><?php echo set_value('productypedesc'); ?></textarea>
+											<?php echo form_error('productypedesc','<p class="help-block" style="color:red;">','</p>'); ?>
                                         </div>
 										<div class="form-group">
-						<input type="submit" name="productSubmit" class="btn btn-primary" value="Add Product">
+						<input type="submit" name="producttpeSubmit" class="btn btn-primary" value="Add Product Type">
                         </div>
 							</form>
 							</div>

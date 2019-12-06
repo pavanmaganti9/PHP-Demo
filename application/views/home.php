@@ -81,7 +81,7 @@
     </nav>
     <!-- END nav -->
 
-    <section id="home-section" class="hero">
+    <!--<section id="home-section" class="hero">
       <div class="home-slider owl-carousel">
         <div class="slider-item" style="background-image: url(<?php echo base_url(); ?>assets/front/images/bg_1.jpg);">
           <div class="overlay"></div>
@@ -129,7 +129,7 @@
         </div>
 
       </div>
-    </section>
+    </section>-->
 
     <section class="ftco-section">
       <div class="container">
@@ -280,10 +280,14 @@
 
           <?php if(!empty($second)){ 
                   
-                  foreach($second as $sf): ?>
+                  foreach($second as $sf): 
+                    $img = $sf->image;
+                    $chunk = explode(".",$img);
+                    $thumb = $chunk[0]."_thumb.".$chunk[1];
+                    ?>
                     <div class="col-md-6 col-lg-3 ftco-animate">
             <div class="product">
-              <a href="#" class="img-prod"><img class="img-fluid" src="<?php echo site_url('assets/images/products/'.$sf->image); ?>" alt="Colorlib Template">
+              <a href="#" class="img-prod"><img class="img-fluid" src="<?php echo site_url('assets/images/products/'.$thumb); ?>" alt="Colorlib Template">
                 <span class="status">30%</span>
                 <div class="overlay"></div>
               </a>

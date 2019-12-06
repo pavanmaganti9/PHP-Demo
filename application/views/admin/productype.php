@@ -5,7 +5,7 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h1 class="page-header">View Products</h1>
+                        <h1 class="page-header">View Product Types</h1>
                     </div>
                     <!-- /.col-lg-12 -->
 					<div class="col-lg-12">
@@ -16,7 +16,7 @@
 							<?php } ?>
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            Products List
+                            Product Type List
                         </div>
 						
                         <div class="panel-body">
@@ -36,10 +36,10 @@
 									foreach($user as $post): ?>
                                         <tr class="odd gradeX">
                                             <td><?php echo $post['name']; ?></td>
-                                            <td><?php echo $post['desc']; ?></td>
+                                            <td><?php echo $post['description']; ?></td>
                                             <td class="center"><?php echo $post['created']; ?></td>
 											<td align="center">
-											<a href="<?php echo site_url('admin/editproduct/'.$post['id']); ?>" class="glyphicon glyphicon-edit"></a>&nbsp;&nbsp;
+											<a href="<?php echo site_url('admin/editproduct_type/'.$post['id']); ?>" class="glyphicon glyphicon-edit"></a>&nbsp;&nbsp;
 											<?php if($_SESSION['user_type'] == 'superadmin'){?>
 											<a href="<?php echo site_url('admin/deleteproduct/'.$post['id']); ?>" class="glyphicon glyphicon-trash" onclick="return confirm('Are you sure to delete?')"></a><?php } ?>
 										</td>

@@ -53,12 +53,23 @@ $route['default_controller'] = 'home';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
+$route['about'] = 'home/about';
+$route['contact'] = 'home/contact';
+$route['product/(:any)'] = 'home/product_detail/$1';
 $route['addcart/(:num)'] = 'home/addToCart/$1';
 $route['cart'] = 'home/cart';
-$route['products/(:num)'] = 'home';
+$route['products'] = 'home/products';
+$route['search/(:any)'] = 'home/search/$1';
+//$route['products/(:num)'] = 'home';
 
 $route['admin'] = 'admin/Admin/login';
 $route['admin/logout'] = 'admin/Admin/logout';
 $route['admin/dashboard'] = 'admin/Admin/dashboard';
 $route['admin/addproduct'] = 'admin/Admin/addproduct';
 $route['admin/products'] = 'admin/Admin/products';
+$route['admin/editproduct/(:num)'] = 'admin/Admin/editproduct/$1';
+$route['admin/deleteproduct/(:num)'] = 'admin/Admin/deleteproduct/$1';
+$route['admin/tables'] = 'admin/Admin/tables';
+$route['admin/add_product_type'] = 'admin/Admin/add_product_type';
+$route['admin/product_type'] = 'admin/Admin/product_type';
+$route['admin/editproduct_type/(:num)'] = 'admin/Admin/editproduct_type/$1';

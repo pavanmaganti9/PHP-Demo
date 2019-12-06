@@ -46,4 +46,44 @@ class User_model extends CI_MODEL{
         return $query->result();
     }
 	
+	function getRow($params = array()){
+        $this->db->select('*');
+        $this->db->from('products');
+        
+        if(array_key_exists("url_slug", $params)){
+            $this->db->where('slug', $params['url_slug']);
+            $query = $this->db->get();
+            $result = ($query->num_rows() > 0)?$query->row_array():FALSE;
+        }else{
+            $query = $this->db->get();
+            $result = ($query->num_rows() > 0)?$query->result_array():FALSE;
+        }
+        //return fetched data
+        return $result;
+    }
+	
+	function getptype($params = array()){
+        $this->db->select('*');
+			$this->db->where('product_type', $params['prodtyp']);
+			$this->db->from('products');
+			$query=$this->db->get();
+			return $query->result_array();
+    }
+	
+	function get_search($params ){
+			$this->db->select('*');
+			$this->db->like('name', $params);
+			$this->db->from('products');
+			$query=$this->db->get();
+			return $query->result_array();
+    }
+	
+	public function get_allproducts() {
+        $this->db->select('*');
+		$this->db->from('products');
+		$this->db->order_by('created','desc');
+		$query=$this->db->get();
+        return $query->result();
+    }
+	
 }
